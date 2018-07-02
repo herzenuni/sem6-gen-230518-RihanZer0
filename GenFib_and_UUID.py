@@ -1,6 +1,7 @@
 import random
 import pytest
 
+#Задание №1
 s=[]
 def fibo(n):
     fib1, fib2 = 0, 1
@@ -21,12 +22,10 @@ def change():
 	listik(fibo(n))
 
 l = fibo(n)
-
-
-
 for i in range(n):
   print(next(l))
 
+#Задание №2
 def not_UUID():
   global s
   for i in range(99999):
@@ -41,6 +40,7 @@ def not_UUID():
     
 y=not_UUID()
 
+#Тесты
 @pytest.mark.parametrize("x,expected", [
     (2,[1, 1]),
     (3,[1, 1, 2]),
